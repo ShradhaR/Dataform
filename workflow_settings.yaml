@@ -1,0 +1,6 @@
+defaultProject: dataform-demo-483620
+defaultDataset: meter_dataset_us
+defaultAssertionDataset: dataform_assertions
+dataformCoreVersion: 3.0.37
+vars:
+  region_type: "us"
