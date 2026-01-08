@@ -1,8 +1,9 @@
 config {
-  type: "table",
-  schema: "meter_dataset_" + dataform.projectConfig.vars.region_suffix
+    type: "table",
+    schema: "meter_dataset_" + dataform.projectConfig.vars.region_suffix
 }
 
-SELECT 
-  * FROM 
+SELECT
+  *
+FROM
   ${ref("smart_meters_" + dataform.projectConfig.vars.region_suffix)}
