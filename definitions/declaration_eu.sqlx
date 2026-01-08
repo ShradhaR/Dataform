@@ -1,6 +1,6 @@
 config {
   type: "declaration",
   database: "dataform-demo-483620",
-  schema: "meter_dataset_us",
-  name: "smart_meters_us"
+  schema: "meter_dataset_eu",
+  name: "smart_meters_eu"
 }
