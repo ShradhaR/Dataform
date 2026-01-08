@@ -1,13 +1,8 @@
 config {
   type: "table",
-  name: "hourly_meter_summary"
+  schema: "meter_dataset_" + dataform.projectConfig.vars.region_suffix
 }
 
-SELECT
-  meter_id,
-  TIMESTAMP_TRUNC(read_at, HOUR) AS observation_hour,
-  SUM(usage_kwh) AS total_kwh
-FROM
-  -- Use dataform.projectConfig.vars to access your variable
-  ${ref("smart_meters_" + dataform.projectConfig.vars.region_type)}
-GROUP BY 1, 2
+SELECT 
+  * FROM 
+  ${ref("smart_meters_" + dataform.projectConfig.vars.region_suffix)}
