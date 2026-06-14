@@ -204,8 +204,4 @@ This project demonstrates:
 * Multi-region analytics architecture
 * Enterprise ELT design patterns
 
-## Author
 
-Shradha Rajmane
-
-Enterprise AI & Analytics Architect | Data & AI Transformation | Google Cloud
